@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    {% if title%}
+      <title>DJANGO BLOG - {{title}}</title>
+    {% else %}
+      <title>DJANGO BLOG</title>
+    {% endif %}
 </head>
 <body>
-<h1> THIS IS THE ABOUT PAGE</h1>
+<h1>This is the about page</h1>
 </body>
 </html>
