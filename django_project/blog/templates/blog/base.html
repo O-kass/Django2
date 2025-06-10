@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title%}
+      <title>DJANGO BLOG V1 - {{title}}</title>
+    {% else %}
+      <title>DJANGO BLOG V1</title>
+    {% endif %}
+</head>
+<body>
+ {% block content %} {% endblock %}
+</body>
+</html>
