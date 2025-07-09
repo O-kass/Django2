@@ -17,6 +17,11 @@ posts = [
 
 ]
 
+about_description = {
+    "description" : "This is a test website with a couple of fake blogs setup and some css just testing out some stuff."
+
+}
+
 
 
 # Create your views here.
@@ -27,4 +32,4 @@ def home(request):
     return render(request, "blog/home.html", context)
 
 def about(request):
-    return render(request, "blog/about.html", {"title": "ABOUT PAGE"})
+    return render(request, "blog/about.html", {"title": "ABOUT PAGE"}, about_description)
